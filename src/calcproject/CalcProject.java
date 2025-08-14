@@ -1,17 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package calcproject;
-/**
- *
- * @author Ali
- */
+
 public class CalcProject {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
         
         try {
@@ -32,8 +24,11 @@ public class CalcProject {
         }
         
          java.awt.EventQueue.invokeLater(() -> {
-            UI_JFrame frame = new UI_JFrame();
-            frame.setVisible(true);
+            UI_JFrame uif = new UI_JFrame();
+            new Numbers(uif);
+            new Logic(uif);
+            uif.setVisible(true);
+            uif.setVisible(true);
         });
     }
     

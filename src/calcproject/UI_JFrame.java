@@ -1,12 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package calcproject;
 import UI_Custom.RoundButton;
 import java.awt.Color;
-import java.awt.TextField;
+import javax.swing.JTextField;
 import javax.swing.BorderFactory;
+import javax.swing.JButton;
 
 
 public class UI_JFrame extends javax.swing.JFrame {
@@ -21,7 +19,48 @@ public class UI_JFrame extends javax.swing.JFrame {
     
     RoundButton button1 = new RoundButton();
 
-
+    public JButton getroundButton22(){
+        return roundButton22;
+    }
+    public JButton getroundButton6(){
+        return roundButton6;
+    }
+    public JButton getroundButton21(){
+        return roundButton21;
+    }
+    public JButton getroundButton16(){
+        return roundButton16;
+    }
+    public JButton getroundButton4(){
+        return roundButton4;
+    }
+    public JButton getroundButton19(){
+        return roundButton19;
+    }
+    public JButton getroundButton14(){
+        return roundButton14;
+    }
+    public JButton getroundButton8(){
+        return roundButton8;
+    }
+    public JButton getroundButton23(){
+        return roundButton23;
+    }
+    public JButton getroundButton18(){
+        return roundButton18;
+    }
+    public JButton getroundButton17(){
+        return roundButton17;
+    }
+    public JButton getroundButton5(){
+        return roundButton5;
+    }
+    public JTextField getjTextField2(){
+        return jTextField2;
+    }
+    
+    
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -57,6 +96,11 @@ public class UI_JFrame extends javax.swing.JFrame {
         roundButton4.setText("4");
         roundButton4.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         roundButton4.setPreferredSize(new java.awt.Dimension(66, 66));
+        roundButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                roundButton4ActionPerformed(evt);
+            }
+        });
 
         roundButton5.setBackground(new java.awt.Color(92, 92, 94));
         roundButton5.setForeground(new java.awt.Color(255, 255, 255));
@@ -74,6 +118,11 @@ public class UI_JFrame extends javax.swing.JFrame {
         roundButton6.setText("1");
         roundButton6.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         roundButton6.setPreferredSize(new java.awt.Dimension(66, 66));
+        roundButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                roundButton6ActionPerformed(evt);
+            }
+        });
 
         roundButton7.setBackground(new java.awt.Color(42, 42, 44));
         roundButton7.setBorder(null);
@@ -139,6 +188,11 @@ public class UI_JFrame extends javax.swing.JFrame {
         roundButton14.setText("6");
         roundButton14.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         roundButton14.setPreferredSize(new java.awt.Dimension(66, 66));
+        roundButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                roundButton14ActionPerformed(evt);
+            }
+        });
 
         roundButton15.setBackground(new java.awt.Color(92, 92, 94));
         roundButton15.setForeground(new java.awt.Color(255, 255, 255));
@@ -151,6 +205,11 @@ public class UI_JFrame extends javax.swing.JFrame {
         roundButton16.setText("3");
         roundButton16.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         roundButton16.setPreferredSize(new java.awt.Dimension(66, 66));
+        roundButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                roundButton16ActionPerformed(evt);
+            }
+        });
 
         roundButton17.setBackground(new java.awt.Color(42, 42, 44));
         roundButton17.setBorder(null);
@@ -169,12 +228,22 @@ public class UI_JFrame extends javax.swing.JFrame {
         roundButton18.setText("9");
         roundButton18.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         roundButton18.setPreferredSize(new java.awt.Dimension(66, 66));
+        roundButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                roundButton18ActionPerformed(evt);
+            }
+        });
 
         roundButton19.setBackground(new java.awt.Color(42, 42, 44));
         roundButton19.setForeground(new java.awt.Color(255, 255, 255));
         roundButton19.setText("5");
         roundButton19.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         roundButton19.setPreferredSize(new java.awt.Dimension(66, 66));
+        roundButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                roundButton19ActionPerformed(evt);
+            }
+        });
 
         roundButton20.setBackground(new java.awt.Color(92, 92, 94));
         roundButton20.setForeground(new java.awt.Color(255, 255, 255));
@@ -187,6 +256,11 @@ public class UI_JFrame extends javax.swing.JFrame {
         roundButton21.setText("2");
         roundButton21.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         roundButton21.setPreferredSize(new java.awt.Dimension(66, 66));
+        roundButton21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                roundButton21ActionPerformed(evt);
+            }
+        });
 
         roundButton22.setBackground(new java.awt.Color(42, 42, 44));
         roundButton22.setBorder(null);
@@ -205,6 +279,11 @@ public class UI_JFrame extends javax.swing.JFrame {
         roundButton23.setText("8");
         roundButton23.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         roundButton23.setPreferredSize(new java.awt.Dimension(66, 66));
+        roundButton23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                roundButton23ActionPerformed(evt);
+            }
+        });
 
         jTextField2.setBackground(new java.awt.Color(0, 0, 0));
         jTextField2.setFont(new java.awt.Font("Arial", 0, 48)); // NOI18N
@@ -330,6 +409,7 @@ public class UI_JFrame extends javax.swing.JFrame {
 
     private void roundButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundButton22ActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_roundButton22ActionPerformed
 
     private void roundButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundButton5ActionPerformed
@@ -343,6 +423,38 @@ public class UI_JFrame extends javax.swing.JFrame {
     private void roundButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundButton8ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_roundButton8ActionPerformed
+
+    private void roundButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_roundButton6ActionPerformed
+
+    private void roundButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundButton21ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_roundButton21ActionPerformed
+
+    private void roundButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundButton16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_roundButton16ActionPerformed
+
+    private void roundButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_roundButton4ActionPerformed
+
+    private void roundButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundButton19ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_roundButton19ActionPerformed
+
+    private void roundButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundButton14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_roundButton14ActionPerformed
+
+    private void roundButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundButton23ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_roundButton23ActionPerformed
+
+    private void roundButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundButton18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_roundButton18ActionPerformed
 
    
     // Variables declaration - do not modify//GEN-BEGIN:variables

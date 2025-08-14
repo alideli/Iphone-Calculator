@@ -166,6 +166,9 @@
           <Dimension value="[66, 66]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="roundButton4ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="UI_Custom.RoundButton" name="roundButton5">
       <Properties>
@@ -203,6 +206,9 @@
           <Dimension value="[66, 66]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="roundButton6ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="UI_Custom.RoundButton" name="roundButton7">
       <Properties>
@@ -356,6 +362,9 @@
           <Dimension value="[66, 66]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="roundButton14ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="UI_Custom.RoundButton" name="roundButton15">
       <Properties>
@@ -390,6 +399,9 @@
           <Dimension value="[66, 66]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="roundButton16ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="UI_Custom.RoundButton" name="roundButton17">
       <Properties>
@@ -430,6 +442,9 @@
           <Dimension value="[66, 66]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="roundButton18ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="UI_Custom.RoundButton" name="roundButton19">
       <Properties>
@@ -447,6 +462,9 @@
           <Dimension value="[66, 66]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="roundButton19ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="UI_Custom.RoundButton" name="roundButton20">
       <Properties>
@@ -481,6 +499,9 @@
           <Dimension value="[66, 66]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="roundButton21ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="UI_Custom.RoundButton" name="roundButton22">
       <Properties>
@@ -521,6 +542,9 @@
           <Dimension value="[66, 66]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="roundButton23ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField2">
       <Properties>
