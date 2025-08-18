@@ -10,21 +10,23 @@ A simple iPhone-style calculator with iOS-like functionality, built using Java S
 - Responsive layout
 
 ## Project Structure
+```
 Iphone-Calculator/
-├── src/ # Java source files
-├── bin/ # Compiled classes
-├── lib/ # External libraries
-├── resources/ # Image assets
-├── build.xml # Ant build script
-├── manifest.mf # Project manifest
-└── README.md # Documentation
+├── src/                  # Java source files
+├── bin/                  # Compiled classes
+├── lib/                  # External libraries
+├── resources/            # Image assets
+├── build.xml             # Ant build script
+├── manifest.mf           # Project manifest
+└── README.md             # Documentation
+```
 
 ## Requirements
 - Java JDK 8+
 - Apache Ant (for build automation)
 - Git (optional)
   
-##Screenshot
+## Screenshot
 ![Calculator Screenshot](./screenshot.png)
 ## Installation
 ```bash
