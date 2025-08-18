@@ -4,10 +4,9 @@ A simple iPhone-style calculator with iOS-like functionality, built using Java S
 
 ## Features
 - Basic operations: +, -, ×, ÷
-- Memory functions: Clear (C) and backspace (⌫)
+- Memory functions: Clear (AC)
 - Decimal support
 - iPhone-inspired UI design
-- Cross-platform (Windows, macOS, Linux)
 - Responsive layout
 
 ## Project Structure
@@ -24,7 +23,9 @@ Iphone-Calculator/
 - Java JDK 8+
 - Apache Ant (for build automation)
 - Git (optional)
-
+  
+##Screenshot
+![Calculator Screenshot](./screenshot.png)
 ## Installation
 ```bash
 git clone https://github.com/yourusername/Iphone-Calculator.git
