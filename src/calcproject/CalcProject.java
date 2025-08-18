@@ -25,10 +25,9 @@ public class CalcProject {
         
          java.awt.EventQueue.invokeLater(() -> {
             UI_JFrame uif = new UI_JFrame();
-            new Numbers(uif);
             new Logic(uif);
             uif.setVisible(true);
-            uif.setVisible(true);
+
         });
     }
     

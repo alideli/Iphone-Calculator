@@ -14,6 +14,8 @@ public class UI_JFrame extends javax.swing.JFrame {
         getContentPane().setBackground(Color.BLACK);
         jTextField2.setHorizontalAlignment(jTextField2.RIGHT);
         jTextField2.setBorder(BorderFactory.createEmptyBorder());
+        jTextField3.setHorizontalAlignment(jTextField3.RIGHT);
+        jTextField3.setBorder(BorderFactory.createEmptyBorder());
         
     }
     
@@ -55,8 +57,32 @@ public class UI_JFrame extends javax.swing.JFrame {
     public JButton getroundButton5(){
         return roundButton5;
     }
+    public JButton getroundButton10(){
+        return roundButton10;
+    }
+    public JButton getroundButton11(){
+        return roundButton11;
+    }
+    public JButton getroundButton9(){
+        return roundButton9;
+    }
+    public JButton getroundButton12(){
+        return roundButton12;
+    }
+    public JButton getroundButton13(){
+        return roundButton13;
+    }
+    public JButton getroundButton15(){
+        return roundButton15;
+    }
+    public JButton getroundButton20(){
+        return roundButton20;
+    }
     public JTextField getjTextField2(){
         return jTextField2;
+    }
+    public JTextField getjTextField3(){
+        return jTextField3;
     }
     
     
@@ -86,6 +112,7 @@ public class UI_JFrame extends javax.swing.JFrame {
         roundButton22 = new UI_Custom.RoundButton();
         roundButton23 = new UI_Custom.RoundButton();
         jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
@@ -152,24 +179,44 @@ public class UI_JFrame extends javax.swing.JFrame {
         roundButton9.setText("-");
         roundButton9.setFont(new java.awt.Font("Arial", 0, 38)); // NOI18N
         roundButton9.setPreferredSize(new java.awt.Dimension(66, 66));
+        roundButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                roundButton9ActionPerformed(evt);
+            }
+        });
 
         roundButton10.setBackground(new java.awt.Color(255, 159, 10));
         roundButton10.setForeground(new java.awt.Color(255, 255, 255));
         roundButton10.setText("÷");
         roundButton10.setFont(new java.awt.Font("Arial", 0, 38)); // NOI18N
         roundButton10.setPreferredSize(new java.awt.Dimension(66, 66));
+        roundButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                roundButton10ActionPerformed(evt);
+            }
+        });
 
         roundButton11.setBackground(new java.awt.Color(255, 159, 10));
         roundButton11.setForeground(new java.awt.Color(255, 255, 255));
         roundButton11.setText("×");
         roundButton11.setFont(new java.awt.Font("Arial", 0, 38)); // NOI18N
         roundButton11.setPreferredSize(new java.awt.Dimension(66, 66));
+        roundButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                roundButton11ActionPerformed(evt);
+            }
+        });
 
         roundButton12.setBackground(new java.awt.Color(255, 159, 10));
         roundButton12.setForeground(new java.awt.Color(255, 255, 255));
         roundButton12.setText("+");
         roundButton12.setFont(new java.awt.Font("Arial", 0, 38)); // NOI18N
         roundButton12.setPreferredSize(new java.awt.Dimension(66, 66));
+        roundButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                roundButton12ActionPerformed(evt);
+            }
+        });
 
         roundButton13.setBackground(new java.awt.Color(255, 159, 10));
         roundButton13.setBorder(null);
@@ -199,6 +246,11 @@ public class UI_JFrame extends javax.swing.JFrame {
         roundButton15.setText("%");
         roundButton15.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         roundButton15.setPreferredSize(new java.awt.Dimension(66, 66));
+        roundButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                roundButton15ActionPerformed(evt);
+            }
+        });
 
         roundButton16.setBackground(new java.awt.Color(42, 42, 44));
         roundButton16.setForeground(new java.awt.Color(255, 255, 255));
@@ -250,6 +302,11 @@ public class UI_JFrame extends javax.swing.JFrame {
         roundButton20.setText("+/-");
         roundButton20.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         roundButton20.setPreferredSize(new java.awt.Dimension(66, 66));
+        roundButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                roundButton20ActionPerformed(evt);
+            }
+        });
 
         roundButton21.setBackground(new java.awt.Color(42, 42, 44));
         roundButton21.setForeground(new java.awt.Color(255, 255, 255));
@@ -286,12 +343,22 @@ public class UI_JFrame extends javax.swing.JFrame {
         });
 
         jTextField2.setBackground(new java.awt.Color(0, 0, 0));
-        jTextField2.setFont(new java.awt.Font("Arial", 0, 48)); // NOI18N
+        jTextField2.setFont(new java.awt.Font("Arial", 0, 36)); // NOI18N
         jTextField2.setForeground(new java.awt.Color(255, 255, 255));
         jTextField2.setText("0");
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
+            }
+        });
+
+        jTextField3.setBackground(new java.awt.Color(0, 0, 0));
+        jTextField3.setFont(new java.awt.Font("Arial", 0, 48)); // NOI18N
+        jTextField3.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField3.setText("0");
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
             }
         });
 
@@ -346,14 +413,17 @@ public class UI_JFrame extends javax.swing.JFrame {
                                 .addComponent(roundButton15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(roundButton10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTextField2))
+                            .addComponent(jTextField2)
+                            .addComponent(jTextField3))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(113, 113, 113)
+                .addGap(72, 72, 72)
                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -389,7 +459,7 @@ public class UI_JFrame extends javax.swing.JFrame {
                             .addComponent(roundButton22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(roundButton17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(roundButton13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -456,9 +526,38 @@ public class UI_JFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_roundButton18ActionPerformed
 
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void roundButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_roundButton10ActionPerformed
+
+    private void roundButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundButton12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_roundButton12ActionPerformed
+
+    private void roundButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_roundButton9ActionPerformed
+
+    private void roundButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_roundButton11ActionPerformed
+
+    private void roundButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundButton15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_roundButton15ActionPerformed
+
+    private void roundButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundButton20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_roundButton20ActionPerformed
+
    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
     private UI_Custom.RoundButton roundButton10;
     private UI_Custom.RoundButton roundButton11;
     private UI_Custom.RoundButton roundButton12;

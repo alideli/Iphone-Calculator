@@ -2,10 +2,14 @@
 package UI_Custom;
 import java.awt.*;
 import javax.swing.*;
+import java.awt.event.*;
+
 
 
 public class RoundButton extends JButton {
     
+    private Color originalBackground;
+
     public RoundButton() {
     this("");
     }
@@ -18,9 +22,23 @@ public class RoundButton extends JButton {
         setOpaque(false);
         setHorizontalAlignment(SwingConstants.CENTER);
         setVerticalAlignment(SwingConstants.CENTER);
+        
+        addActionListener(e -> {
+            Color original = getBackground();
+            setBackground(Color.white);
+            repaint();
+            
+            new Timer (100, ev ->{
+                setBackground(original);
+                repaint();
+                ((Timer)ev.getSource()).stop();
+            }).start();
+        });
     }
-    @Override
     
+    
+    
+    @Override
     protected void paintComponent(Graphics g){
         Graphics2D g2d = (Graphics2D) g.create();
         
@@ -50,4 +68,5 @@ public class RoundButton extends JButton {
         int diameter = Math.max(size.width, size.height);
         return new Dimension(diameter, diameter);
     }
+    
 }
