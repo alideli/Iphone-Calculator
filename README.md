@@ -28,7 +28,7 @@ Iphone-Calculator/
   
 ## Screenshot
 ![Calculator Screenshot](./Screenshot1.png)
-![Calculator Screenshot](./Screenshot1.png)
+![Calculator Screenshot](./Screenshot2.png)
 ## Installation
 ```bash
 git clone https://github.com/yourusername/Iphone-Calculator.git
