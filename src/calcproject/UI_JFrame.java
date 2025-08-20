@@ -5,10 +5,11 @@ import java.awt.Color;
 import javax.swing.JTextField;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
+import javax.swing.JFrame;
 
 
 public class UI_JFrame extends javax.swing.JFrame {
-
+    
     public UI_JFrame() {
         initComponents();
         getContentPane().setBackground(Color.BLACK);
@@ -16,7 +17,6 @@ public class UI_JFrame extends javax.swing.JFrame {
         jTextField2.setBorder(BorderFactory.createEmptyBorder());
         jTextField3.setHorizontalAlignment(jTextField3.RIGHT);
         jTextField3.setBorder(BorderFactory.createEmptyBorder());
-        
     }
     
     RoundButton button1 = new RoundButton();
@@ -342,16 +342,18 @@ public class UI_JFrame extends javax.swing.JFrame {
             }
         });
 
+        jTextField2.setEditable(false);
         jTextField2.setBackground(new java.awt.Color(0, 0, 0));
-        jTextField2.setFont(new java.awt.Font("Arial", 0, 36)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField2.setText("0");
+        jTextField2.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jTextField2.setForeground(new java.awt.Color(0, 204, 204));
+        jTextField2.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
             }
         });
 
+        jTextField3.setEditable(false);
         jTextField3.setBackground(new java.awt.Color(0, 0, 0));
         jTextField3.setFont(new java.awt.Font("Arial", 0, 48)); // NOI18N
         jTextField3.setForeground(new java.awt.Color(255, 255, 255));

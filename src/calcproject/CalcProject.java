@@ -26,6 +26,7 @@ public class CalcProject {
          java.awt.EventQueue.invokeLater(() -> {
             UI_JFrame uif = new UI_JFrame();
             new Logic(uif);
+            uif.setResizable(false);
             uif.setVisible(true);
 
         });

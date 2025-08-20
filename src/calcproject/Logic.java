@@ -1,11 +1,8 @@
-
 package calcproject;
 
 
 public class Logic {
     private UI_JFrame uif;
-    private double result = 0;
-    private String operator = "";
     private boolean isNewOperation = true;
 
     
@@ -24,7 +21,7 @@ public class Logic {
         uif.getroundButton8().addActionListener(e -> number_7());
         uif.getroundButton23().addActionListener(e -> number_8());
         uif.getroundButton18().addActionListener(e -> number_9());
-        uif.getroundButton17().addActionListener(e -> number_dot());
+        uif.getroundButton17().addActionListener(e -> appendDot());
         
         uif.getroundButton5().addActionListener(e -> AC());
         
@@ -37,127 +34,36 @@ public class Logic {
         uif.getroundButton13().addActionListener(e -> result());
     }
     
-    private void appendNumber(String num){
-        String currentText = uif.getjTextField2().getText();
-        if(isNewOperation || currentText.equals("0")){
-            uif.getjTextField2().setText(num);
-            isNewOperation = false;
-        }else{
-            uif.getjTextField2().setText(currentText + num);
-        }
-    }
-    
+
     private void number_0(){
-        String currentText = uif.getjTextField2().getText();
-        if(currentText.equals("0")){
-            uif.getjTextField2().setText("0");
-        }else{
-            uif.getjTextField2().setText(uif.getjTextField2().getText() + "0");
-        }
+        appendNumber("0");
     }
     private void number_1(){
-        String currentText = uif.getjTextField2().getText();
-        if(currentText.equals("0")){
-            uif.getjTextField2().setText("1");
-        }else{
-            uif.getjTextField2().setText(uif.getjTextField2().getText() + "1");
-        }
+        appendNumber("1");
     }
     private void number_2(){
-        String currentText = uif.getjTextField2().getText();
-        if(currentText.equals("0")){
-            uif.getjTextField2().setText("2");
-        }else{
-            uif.getjTextField2().setText(uif.getjTextField2().getText() + "2");
-        }
+        appendNumber("2");
     }
     private void number_3(){
-        String currentText = uif.getjTextField2().getText();
-        if(currentText.equals("0")){
-            uif.getjTextField2().setText("3");
-        }else{
-            uif.getjTextField2().setText(uif.getjTextField2().getText() + "3");
-        }
+        appendNumber("3");
     }
     private void number_4(){
-        String currentText = uif.getjTextField2().getText();
-        if(currentText.equals("0")){
-            uif.getjTextField2().setText("4");
-        }else{
-            uif.getjTextField2().setText(uif.getjTextField2().getText() + "4");
-        }
+        appendNumber("4");
     }
     private void number_5(){
-        String currentText = uif.getjTextField2().getText();
-        if(currentText.equals("0")){
-            uif.getjTextField2().setText("5");
-        }else{
-            uif.getjTextField2().setText(uif.getjTextField2().getText() + "5");
-        }
+        appendNumber("5");
     }
     private void number_6(){
-        String currentText = uif.getjTextField2().getText();
-        if(currentText.equals("0")){
-            uif.getjTextField2().setText("6");
-        }else{
-            uif.getjTextField2().setText(uif.getjTextField2().getText() + "6");
-        }
+        appendNumber("6");
     }
     private void number_7(){
-        String currentText = uif.getjTextField2().getText();
-        if(currentText.equals("0")){
-            uif.getjTextField2().setText("7");
-        }else{
-            uif.getjTextField2().setText(uif.getjTextField2().getText() + "7");
-        }
+        appendNumber("7");
     }
     private void number_8(){
-        String currentText = uif.getjTextField2().getText();
-        if(currentText.equals("0")){
-            uif.getjTextField2().setText("8");
-        }else{
-            uif.getjTextField2().setText(uif.getjTextField2().getText() + "8");
-        }
+        appendNumber("8");
     }
     private void number_9(){
-        String currentText = uif.getjTextField2().getText();
-        if(currentText.equals("0")){
-            uif.getjTextField2().setText("9");
-        }else{
-            uif.getjTextField2().setText(uif.getjTextField2().getText() + "9");
-        }
-    } 
-    private void AC(){
-        uif.getjTextField2().setText("0");
-        uif.getjTextField3().setText("0");
-        result = 0;
-        operator = "";
-        isNewOperation = true;
-    }
-    private void number_dot(){
-        String currentText = uif.getjTextField2().getText();
-        if(! currentText.contains(".")){
-            uif.getjTextField2().setText(uif.getjTextField2().getText() + ".");
-        }
-    }
-    private void sign(){
-        String text = uif.getjTextField2().getText();
-        if(!text.isEmpty() && !text.equals("0")){
-            double val = Double.parseDouble(text);
-            val = -val;
-            uif.getjTextField2().setText(String.valueOf(val));
-        }
-    }
-    private void setOperator(String op){
-        double current = Double.parseDouble(uif.getjTextField2().getText());
-        if(!operator.isEmpty()){
-            calculateIntermediate(current);
-            uif.getjTextField3().setText(String.valueOf(result));
-        }else{
-            result = current;
-        }
-        operator = op;
-        uif.getjTextField2().setText("");
+        appendNumber("9");
     }
     private void division(){
         setOperator("/");
@@ -174,38 +80,108 @@ public class Logic {
     private void percent(){
         setOperator("%");
     }
-    private void calculateIntermediate(double num){
-        switch (operator){
-            case "+":
-                result += num;
-                break;
-            case "-":
-                result -= num;
-                break;
-            case "*":
-                result *= num;
-                break;
-            case "/":
-                if(num != 0){
-                    result /= num;
-                }
-                else{
-                    uif.getjTextField2().setText("Error!");
-                    isNewOperation = true;
-                    return;
-                }
-                break;
-            case "%":
-                result %= num;
-                break;
+    
+
+    private void appendNumber(String num) {
+        String text = uif.getjTextField3().getText();
+        if (isNewOperation || text.equals("0")) {
+            uif.getjTextField3().setText(num);
+            isNewOperation = false;
+        } else {
+            uif.getjTextField3().setText(text + num);
         }
     }
-    private void result(){
-        double current = Double.parseDouble(uif.getjTextField2().getText());
-        calculateIntermediate(current);
-        uif.getjTextField3().setText(String.valueOf(result));
+
+    private void appendDot() {
+        String text = uif.getjTextField3().getText();
+        if (!text.contains(".")) {
+            uif.getjTextField3().setText(text + ".");
+            isNewOperation = false;
+        }
+    }
+
+    private void setOperator(String op) {
+        String text = uif.getjTextField3().getText();
+        if (!text.isEmpty() && !"+-*/%".contains("" + text.charAt(text.length() - 1))) {
+            uif.getjTextField3().setText(text + op);
+            isNewOperation = false;
+        }
+    }
+
+    private void AC() {
+        uif.getjTextField3().setText("0");
+        uif.getjTextField2().setText("");
         isNewOperation = true;
-        operator = "";
+    }
+
+    private void sign() {
+        String text = uif.getjTextField3().getText();
+        if (!text.isEmpty() && !text.equals("0")) {
+            double val = Double.parseDouble(text);
+            val = -val;
+            uif.getjTextField3().setText(String.valueOf(val));
+        }
+    }
+
+    private void result() {
+        String expr = uif.getjTextField3().getText();
+        if (expr.isEmpty()) return;
+
+        try {
+            double total = 0;
+            char lastAddSub = '+';
+            String number = "";
+            double lastMulDiv = 0;
+            char lastOp = ' ';
+
+            for (int i = 0; i < expr.length(); i++) {
+                char c = expr.charAt(i);
+                if ((c >= '0' && c <= '9') || c == '.') {
+                    number += c;
+                } else {
+                    double num = Double.parseDouble(number);
+                    number = "";
+
+                    switch (lastOp) {
+                        case '*': num = lastMulDiv * num; lastOp = ' '; break;
+                        case '/': num = lastMulDiv / num; lastOp = ' '; break;
+                        case '%': num = lastMulDiv * num / 100; lastOp = ' '; break;
+                    }
+
+                    if (c == '*' || c == '/' || c == '%') {
+                        lastOp = c;
+                        lastMulDiv = num;
+                    } else {
+                        switch (lastAddSub) {
+                            case '+': total += num; break;
+                            case '-': total -= num; break;
+                        }
+                        lastAddSub = c;
+                    }
+                }
+            }
+
+            if (!number.isEmpty()) {
+                double num = Double.parseDouble(number);
+                switch (lastOp) {
+                    case '*': num = lastMulDiv * num; break;
+                    case '/': num = lastMulDiv / num; break;
+                    case '%': num = lastMulDiv * num / 100; break;
+                }
+                switch (lastAddSub) {
+                    case '+': total += num; break;
+                    case '-': total -= num; break;
+                }
+            }
+
+            uif.getjTextField2().setText(expr);
+            uif.getjTextField3().setText(String.valueOf(total));
+            isNewOperation = true;
+        } catch (Exception e) {
+            uif.getjTextField3().setText("Error!");
+            isNewOperation = true;
+        }
     }
     
 }
+    
