@@ -22,7 +22,17 @@ Iphone-Calculator/
 ```
 
 ## Requirements
-- Java JDK 8+
+- JDK (New releases) Needed to add to path. Follow guide below.
+```
+Right-click "This PC" or "My Computer" and select "Properties."
+Click "Advanced system settings."
+Click "Environment Variables."
+Under "System variables," click "New."
+Enter "JAVA\_HOME" as the Variable name.
+Enter the path to your JDK installation (e.g., C:\Program Files\Java\jdk-17) as the Variable value. Do not include the \bin directory here.
+Click "OK."
+```
+- JRE (New releases)
 - Apache Ant (for build automation)
 - Git (optional)
   
