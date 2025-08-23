@@ -1,14 +1,13 @@
-
 package UI_Custom;
 import java.awt.*;
 import javax.swing.*;
-import java.awt.event.*;
+//import java.awt.event.*;
 
 
 
 public class RoundButton extends JButton {
     
-    private Color originalBackground;
+//    private Color originalBackground;
 
     public RoundButton() {
     this("");
@@ -28,7 +27,7 @@ public class RoundButton extends JButton {
             setBackground(Color.white);
             repaint();
             
-            new Timer (100, ev ->{
+            new Timer (100, ev -> {
                 setBackground(original);
                 repaint();
                 ((Timer)ev.getSource()).stop();

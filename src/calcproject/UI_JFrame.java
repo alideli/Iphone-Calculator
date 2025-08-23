@@ -1,11 +1,10 @@
-
 package calcproject;
-import UI_Custom.RoundButton;
+//import UI_Custom.RoundButton;
 import java.awt.Color;
 import javax.swing.JTextField;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
-import javax.swing.JFrame;
+//import javax.swing.JFrame;
 
 
 public class UI_JFrame extends javax.swing.JFrame {
@@ -19,7 +18,6 @@ public class UI_JFrame extends javax.swing.JFrame {
         jTextField3.setBorder(BorderFactory.createEmptyBorder());
     }
     
-    RoundButton button1 = new RoundButton();
 
     public JButton getroundButton22(){
         return roundButton22;

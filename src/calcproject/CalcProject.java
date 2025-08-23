@@ -28,7 +28,6 @@ public class CalcProject {
             new Logic(uif);
             uif.setResizable(false);
             uif.setVisible(true);
-
         });
     }
     
