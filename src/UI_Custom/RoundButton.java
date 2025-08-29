@@ -1,14 +1,10 @@
 package UI_Custom;
 import java.awt.*;
 import javax.swing.*;
-//import java.awt.event.*;
-
 
 
 public class RoundButton extends JButton {
     
-//    private Color originalBackground;
-
     public RoundButton() {
     this("");
     }

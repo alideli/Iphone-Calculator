@@ -36,7 +36,7 @@ public class Logic {
         if(text.endsWith(")")){
             return text + "*";
         }else{
-        return text;
+            return text;
         }
     }
     
@@ -57,7 +57,17 @@ public class Logic {
     
     private void appendNumber(String num) {
         String text = handleMulP(uif.getjTextField3().getText());
-        if(isTypingNewNumber || text.equals("0")) {
+        if(isTypingNewNumber){
+            if(!text.isEmpty() && "+-*/%".indexOf(text.charAt(text.length() - 1)) >= 0) {
+                uif.getjTextField3().setText(text + num);
+            }else{
+                uif.getjTextField3().setText(num);
+            }
+            isTypingNewNumber = false;
+            return;
+        }
+
+        if(text.equals("0")) {
             uif.getjTextField3().setText(num);
             isTypingNewNumber = false;
         }else{
@@ -69,13 +79,23 @@ public class Logic {
         String text = handleMulP(uif.getjTextField3().getText());
         String lastNumber = lastNumber(text);
 
-        if(lastNumber.isEmpty()){
+        if(isTypingNewNumber) {
+            if(!text.isEmpty() && "+-*/%".indexOf(text.charAt(text.length() - 1)) >= 0) {
+                uif.getjTextField3().setText(text + "0.");
+            }else {
+                uif.getjTextField3().setText("0.");
+            }
+            isTypingNewNumber = false;
+            return;
+        }
+
+        if(lastNumber.isEmpty()) {
             uif.getjTextField3().setText(text + "0.");
             isTypingNewNumber = false;
             return;
         }
 
-        if(!lastNumber.contains(".")){
+        if(!lastNumber.contains(".")) {
             uif.getjTextField3().setText(text + ".");
             isTypingNewNumber = false;
         }
@@ -91,6 +111,7 @@ public class Logic {
         }else{
             uif.getjTextField3().setText(text + op);
         }
+        isTypingNewNumber = true;
     }
 
     private void AC() {
@@ -118,6 +139,7 @@ public class Logic {
                 break;
             }
         }
+
 
         String prefix = text.substring(0, start);
         String lastNumber = text.substring(start);
