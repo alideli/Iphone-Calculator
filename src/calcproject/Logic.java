@@ -32,31 +32,8 @@ public class Logic {
         uif.getroundButton13().addActionListener(e -> result());
     }
     
-    private String handleMulP(String text) {
-        if(text.endsWith(")")){
-            return text + "*";
-        }else{
-            return text;
-        }
-    }
-    
-    private String lastNumber(String text) {
-        int lastOpIndex = -1;
-        for(int i = text.length() - 1; i >= 0; i--) {
-            if("+-*/%".indexOf(text.charAt(i)) >= 0) {
-                lastOpIndex = i;
-                break;
-            }
-        }
-        if(lastOpIndex >= 0){
-            return text.substring(lastOpIndex + 1);
-        }else{
-            return text;
-        }
-    }
-    
     private void appendNumber(String num) {
-        String text = handleMulP(uif.getjTextField3().getText());
+        String text =uif.getjTextField3().getText();
         if(isTypingNewNumber){
             if(!text.isEmpty() && "+-*/%".indexOf(text.charAt(text.length() - 1)) >= 0) {
                 uif.getjTextField3().setText(text + num);
@@ -76,7 +53,7 @@ public class Logic {
     }
     
     private void appendDot() {
-        String text = handleMulP(uif.getjTextField3().getText());
+        String text = uif.getjTextField3().getText();
         String lastNumber = lastNumber(text);
 
         if(isTypingNewNumber) {
